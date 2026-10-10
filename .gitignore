@@ -1,0 +1,65 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production Build Outputs
+dist/
+dist-ssr/
+build/
+out/
+
+# Review ZIP Archives (Local review packages)
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+
+# Environment & Secrets (Keep .env.example tracked)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+!*.env.example
+*.pem
+*.key
+*.cert
+*.crt
+
+# Temporary & User Data
+*.tmp
+*.temp
+WhatsApp Image*
+
+# Logs & Diagnostics
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Caches & Test Coverage
+.cache/
+.parcel-cache/
+.turbo/
+coverage/
+*.lcov
+.nyc_output/
+.eslintcache
+.stylelintcache
+
+# IDE & OS Metadata
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

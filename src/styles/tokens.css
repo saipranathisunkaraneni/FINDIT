@@ -1,0 +1,84 @@
+/**
+ * Findit Design System Tokens
+ * Campus Lost & Found Editorial Aesthetic
+ * 
+ * Palette:
+ * - Warm Ivory: #F7F5EF
+ * - White/Cream Surfaces: #FFFEFA
+ * - Forest-Green Primary: #174B3A
+ * - Dark Green: #10372D
+ * - Charcoal Text: #242923
+ * - Muted Secondary Text: #72766F
+ * - Subtle Borders: #E5E2D9
+ * - Soft Sage: #DCE7D8
+ */
+
+:root {
+  /* Surface & Background Colors */
+  --color-bg-ivory: #F7F5EF;
+  --color-bg-ivory-warm: #FAF8F2;
+  --color-surface-card: #FFFEFA;
+  --color-surface-pure: #FFFFFF;
+  --color-surface-hover: #F6F4EC;
+  --color-surface-inset: #F2EFE7;
+
+  /* Brand Primary Colors */
+  --color-forest-primary: #174B3A;
+  --color-forest-dark: #10372D;
+  --color-forest-hover: #1f5e49;
+  --color-forest-active: #0c2b22;
+  --color-forest-subtle: #EBF2ED;
+  --color-forest-ring: rgba(23, 75, 58, 0.25);
+
+  /* Typography Colors */
+  --color-charcoal-text: #242923;
+  --color-muted-text: #72766F;
+  --color-muted-light: #9CA099;
+  --color-inverse-text: #FFFEFA;
+
+  /* Border Tokens */
+  --color-border-subtle: #E5E2D9;
+  --color-border-medium: #D9D5C9;
+  --color-border-strong: #CEC9BC;
+  --color-border-forest: #174B3A;
+
+  /* Soft Sage Accents */
+  --color-sage-accent: #DCE7D8;
+  --color-sage-light: #EEF4EB;
+  --color-sage-subtle: #F4F7F2;
+
+  /* Status Badges */
+  --color-status-found-bg: #E8F5E9;
+  --color-status-found-text: #1B5E20;
+  --color-status-found-border: #C8E6C9;
+
+  --color-status-lost-bg: #FBE9E7;
+  --color-status-lost-text: #C62828;
+  --color-status-lost-border: #FFCCBC;
+
+  --color-status-pending-bg: #FFF8E1;
+  --color-status-pending-text: #9E6B02;
+  --color-status-pending-border: #FFE082;
+
+  /* Typography Families */
+  --font-editorial-serif: "Newsreader", "Playfair Display", Georgia, serif;
+  --font-ui-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Restrained Border Radii */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* Editorial Shadows - Organic, never blurred neon */
+  --shadow-subtle: 0 1px 2px 0 rgba(36, 41, 35, 0.04);
+  --shadow-card: 0 2px 6px -1px rgba(36, 41, 35, 0.05), 0 1px 3px rgba(36, 41, 35, 0.03);
+  --shadow-card-hover: 0 10px 24px -4px rgba(23, 75, 58, 0.08), 0 3px 6px -1px rgba(36, 41, 35, 0.03);
+  --shadow-floating: 0 16px 36px -6px rgba(23, 75, 58, 0.12);
+
+  /* Spacing Scale Helpers */
+  --container-max-width: 1240px;
+  --navbar-height: 72px;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Findit — Campus Lost & Found",
+  "short_name": "Findit",
+  "description": "Campus lost and found application for KITSW.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F5EF",
+  "theme_color": "#174B3A",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

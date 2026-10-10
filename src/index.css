@@ -1,0 +1,116 @@
+@import "tailwindcss";
+@import "./styles/tokens.css";
+
+@theme {
+  --font-serif: "Newsreader", "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Primary Brand Colors */
+  --color-primary: #174B3A;
+  --color-primary-dark: #10372D;
+  --color-primary-hover: #1f5e49;
+  --color-primary-subtle: #EBF2ED;
+
+  /* Surface & Background */
+  --color-ivory: #F7F5EF;
+  --color-ivory-warm: #FAF8F2;
+  --color-surface: #FFFEFA;
+  --color-surface-hover: #F6F4EC;
+  --color-surface-inset: #F2EFE7;
+
+  /* Typography Colors */
+  --color-charcoal: #242923;
+  --color-muted: #72766F;
+  --color-muted-light: #9CA099;
+
+  /* Borders & Dividers */
+  --color-border: #E5E2D9;
+  --color-border-subtle: #EDEAE1;
+  --color-border-strong: #CEC9BC;
+
+  /* Sage Accent */
+  --color-sage: #DCE7D8;
+  --color-sage-light: #EEF4EB;
+  --color-sage-subtle: #F4F7F2;
+
+  /* Status Tokens */
+  --color-status-found-bg: #E8F5E9;
+  --color-status-found-text: #1B5E20;
+  --color-status-found-border: #C8E6C9;
+
+  --color-status-lost-bg: #FBE9E7;
+  --color-status-lost-text: #C62828;
+  --color-status-lost-border: #FFCCBC;
+
+  --color-status-pending-bg: #FFF8E1;
+  --color-status-pending-text: #9E6B02;
+  --color-status-pending-border: #FFE082;
+}
+
+/* Base Global Reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg-ivory);
+  color: var(--color-charcoal-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+/* Editorial Typography Styles */
+h1, h2, h3, .font-serif-heading {
+  font-family: var(--font-serif);
+  color: var(--color-charcoal-text);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Common Control Utility Styles */
+.btn-primary {
+  background-color: var(--color-forest-primary);
+  color: #FFFEFA;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  transition: all 0.15s ease-in-out;
+}
+.btn-primary:hover {
+  background-color: var(--color-forest-dark);
+}
+
+.btn-secondary {
+  background-color: var(--color-surface-card);
+  color: var(--color-charcoal-text);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  transition: all 0.15s ease-in-out;
+}
+.btn-secondary:hover {
+  background-color: var(--color-surface-hover);
+  border-color: var(--color-border-medium);
+}
+
+/* Focus styles for keyboard accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-forest-primary);
+  outline-offset: 2px;
+}
+
+/* Custom Phone Frame Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(36, 41, 35, 0.18);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(23, 75, 58, 0.4);
+}
